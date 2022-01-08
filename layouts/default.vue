@@ -2,7 +2,6 @@
   <div>
     <!-- <TopPanel v-if="isShowing" @clicked="onTopPanelClose"></TopPanel> -->
     <TopHeader></TopHeader>
-    <!-- <Menubar></Menubar> -->
     <nuxt />
     <!-- <Footer></Footer>
     <SiteLoader v-if="loading" />
@@ -13,7 +12,6 @@
 <script>
 import TopPanel from "./TopPanel";
 import TopHeader from "./TopHeader";
-import Menubar from "./Menubar";
 import Footer from "./Footer";
 import BackToTop from "./BackToTop";
 import SiteLoader from "./SiteLoder";
@@ -21,7 +19,6 @@ export default {
   components: {
     TopPanel,
     TopHeader,
-    Menubar,
     Footer,
     BackToTop,
     SiteLoader,

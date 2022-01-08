@@ -14,9 +14,9 @@
     "
   >
     <div class="px-8">
-      <nuxt-link class="md:hidden py-2" to="/">BUXTURE</nuxt-link>
+      <nuxt-link class="md:hidden py-2 font-bold text-green-800 text-lg" to="/">BUXTURE</nuxt-link>
       <div class="flex flex-row justify-between items-center">
-        <nuxt-link class="flex-none xs:hidden sm:hidden md:inline-block" to="/"
+        <nuxt-link class="flex-none xs:hidden sm:hidden md:inline-block font-bold text-green-800" to="/"
           >BUXTURE</nuxt-link
         ><transition name="rotate">
           <a
@@ -52,7 +52,7 @@
               <li>
                 <nuxt-link
                   class="text-2xl block p-4 text-green-800 active"
-                  to="/"
+                  to="/store"
                   >Store</nuxt-link
                 >
               </li>
@@ -66,8 +66,8 @@
         </transition>
         <ul class="xs:hidden sm:inline-flex gap-4 list-none">
           <li class="md:hidden"><nuxt-link to="/">Home</nuxt-link></li>
-          <li><nuxt-link to="/">Store</nuxt-link></li>
-          <li><nuxt-link to="/">Blogs</nuxt-link></li>
+          <li><nuxt-link class="text-green-800 font-bold" to="/store">Store</nuxt-link></li>
+          <li><nuxt-link class="text-green-800" to="/">Blogs</nuxt-link></li>
         </ul>
         <ul class="inline-flex gap-4 list-none">
           <li>
@@ -122,6 +122,7 @@ export default {
   text-decoration: underline;
 }
 
+
 .slide-enter-active {
   animation: slide-in 0.5s;
 }
@@ -139,20 +140,4 @@ export default {
   }
 }
 
-.rotate-enter-active {
-  animation: rotate-right 0.5s;
-}
-
-.rotate-leave-active {
-  animation: rotate-right 0.5s reverse;
-}
-
-@keyframes rotate-right {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(90deg);
-  }
-}
 </style>

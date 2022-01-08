@@ -1,16 +1,9 @@
 <template>
-    <div>
-        <!-- Start Page Title Area -->
-        <div class="page-title-area">
-            <div class="container">
-                <ul>
-                    <li><nuxt-link to="/">Home</nuxt-link></li>
-                    <li>Cart</li>
-                </ul>
-            </div>
-        </div>
-        <!-- End Page Title Area -->
+    <div class="w-full">
+      <div class="xs:p-20 sm:p-20 md:p-10 w-full">
+        Back to store
         <CartItems />
+      </div>
     </div>
 </template>
 
